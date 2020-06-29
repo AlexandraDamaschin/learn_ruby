@@ -17,3 +17,7 @@ def multiply(numbers)
 
   numbers.inject(1) { |total, number| total * number }
 end
+
+def power(number, power)
+  number ** power
+end
