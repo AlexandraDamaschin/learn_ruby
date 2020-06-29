@@ -21,3 +21,11 @@ end
 def power(number, power)
   number ** power
 end
+
+def factorial(number)
+  if number <= 1
+    1
+  else
+    number * factorial(number - 1)
+  end
+end
