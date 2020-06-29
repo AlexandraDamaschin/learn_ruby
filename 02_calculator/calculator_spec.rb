@@ -37,21 +37,21 @@ require "calculator"
 
 describe "add" do
   it "adds 0 and 0" do
-    add(0,0).should == 0
+    add(0, 0).should == 0
   end
 
   it "adds 2 and 2" do
-    add(2,2).should == 4
+    add(2, 2).should == 4
   end
 
   it "adds positive numbers" do
-    add(2,6).should == 8
+    add(2, 6).should == 8
   end
 end
 
 describe "subtract" do
   it "subtracts numbers" do
-    subtract(10,4).should == 6
+    subtract(10, 4).should == 6
   end
 end
 
@@ -65,11 +65,11 @@ describe "sum" do
   end
 
   it "computes the sum of an array of two numbers" do
-    sum([7,11]).should == 18
+    sum([7, 11]).should == 18
   end
 
   it "computes the sum of an array of many numbers" do
-    sum([1,3,5,7,9]).should == 25
+    sum([1, 3, 5, 7, 9]).should == 25
   end
 end
 
@@ -79,10 +79,13 @@ end
 
 describe "#multiply" do
 
-  it "multiplies two numbers"
+  it "multiplies two numbers" do
+    multiply([2, 3]).should == 6
+  end
 
-  it "multiplies several numbers"
-
+  it "multiplies several numbers" do
+    multiply([2, 2, 2]).should == 8
+  end
 end
 
 describe "#power" do

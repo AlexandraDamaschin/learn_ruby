@@ -9,3 +9,11 @@ end
 def sum(params)
   params.inject(0) { |total, number| total + number }
 end
+
+def multiply(numbers)
+  # result = 1
+  # numbers.each { |number| result *= number }
+  # result
+
+  numbers.inject(1) { |total, number| total * number }
+end
