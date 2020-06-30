@@ -57,7 +57,7 @@ describe "#translate" do
 
   it "counts 'qu' as a consonant even when it's preceded by a consonant" do
     s = translate("square")
-    s.should == "aresquay"
+    s.should == "uaresqay"
   end
 
   it "translates many words" do
