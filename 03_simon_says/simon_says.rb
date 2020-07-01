@@ -18,8 +18,8 @@ def first_word(word)
   word.split(' ').first
 end
 
-def titleize(word)
-  words = word.split.map do |word|
+def titleize(title)
+  words = title.split.map do |word|
     if %w[the and over].include?(word)
       word
     else
